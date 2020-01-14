@@ -10,10 +10,12 @@
 ### Answer 1
 
   /**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
+  
+    @param {number[]} nums
+    @param {number} target
+    @return {number[]}
+ 
+  */
  
   var twoSum = function(nums, target) {
   
