@@ -46,6 +46,9 @@
           for ( let i = str.length-1; i >= 0; i-- )
             result += str.charAt(i);
         }
+        if (Number(result) < (Math.pow(2, 31) * -1) || Number(result) > Math.pow(2, 31) - 1) {
+            return 0;
+        }
         return Number(result); 
     };
 
