@@ -9,14 +9,6 @@
   
 ### Answer 1
 
-  /**
-  
-    @param {number[]} nums
-    @param {number} target
-    @return {number[]}
- 
-  */
- 
   var twoSum = function(nums, target) {
   
   loop1:
@@ -48,23 +40,42 @@
   };
 
 ### Problem 2
+
 Given a 32-bit signed integer, reverse digits of an integer.
 
 ### Answer 2
+
 var reverse = function(x) {
+    
     var result = str = '';
+    
     if ( x < 0 )
+    
     {
-        result += '-';
-        x = Number(x.toString().slice(1));
+    
+    result += '-';
+    
+    x = Number(x.toString().slice(1));
+    
     }
+    
     str = x.toString();
+    
     if ( str.charAt(str.length) !== '0'){
-        for ( let i = str.length; i >= 0; i-- )
-            result += str.charAt(i);
+    
+    for ( let i = str.length; i >= 0; i-- )
+    
+    result += str.charAt(i);
+    
     } else {
-        for ( let i = str.length-1; i >= 0; i-- )
-            result += str.charAt(i);
+    
+    for ( let i = str.length-1; i >= 0; i-- )
+    
+    result += str.charAt(i);
+    
     }
+    
     return Number(result); 
+
 };
+
