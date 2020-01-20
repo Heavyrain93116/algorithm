@@ -1,3 +1,8 @@
+function ListNode(val) {
+  this.val = val;
+  this.next = null;
+}
+
 var mergeTwoLists = function(l1, l2) {
   var l3 = new ListNode(null, null);
   var prev = l3;
@@ -17,15 +22,15 @@ var mergeTwoLists = function(l1, l2) {
 };
 
 /**
-var n3 = new Node(10, null);
-var n2 = new Node(3, n3);
+var n3 = new Node(4, null);
+var n2 = new Node(2, n3);
 var n1 = new Node(1, n2);
 var l1 = n1;
 
-var n6 = new Node(9, null);
-var n5 = new Node(6, n6);
-var n4 = new Node(5, n5);
+var n6 = new Node(4, null);
+var n5 = new Node(3, n6);
+var n4 = new Node(1, n5);
 var l2 = n4; 
 
-mergeTwoLists(l1,l2) = 1 > 3 > 5 > 6 > 9 > 10
+mergeTwoLists(l1,l2) = 1 > 1 > 2 > 3 > 4 > 4
 */
